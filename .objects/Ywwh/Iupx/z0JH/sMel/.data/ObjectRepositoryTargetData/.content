@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QE73cnjbRUCQ3kRE1EmxOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="flipkart.com/acer-ek-series-60-45-cm-24-inch-full-hd-led-backlit-ips-panel-250-nits-brightness-hdmi-vga-ports-cable-eye-care-monitor-ek240y-p6/product-reviews/itma2e8121907189" DesignTimeRectangle="302, 482, 304, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='wjcEIp AbG6iz' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d6c9a549-5099-49ea-95ae-771bd887ea96" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Acer Ek Series 60 45 Cm 24 Inch Full Hd Led Backlit Ips Panel 250 Nits Brightness Hdmi Vga Ports Cable Eye Care Monitor Ek240y P6 Reviews: Latest Review of Acer Ek Series 60 45 Cm 24 Inch Full Hd Led Backlit Ips Panel 250 Nits Brightness Hdmi Vga Ports Cable Eye Care Monitor Ek240y P6 | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d41174ebd26c1a4897dcec152b813265.png" xmlns="">0qVR1GZjfpkC1BTd3Fk3YEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

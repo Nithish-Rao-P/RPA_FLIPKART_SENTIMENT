@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BebYEWHRi06zT2Bva64zsg" Reference="-a-3-KI9pEe6HfVMrlB9wA/KHTQYcSAJk6ChlLhAz67wA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.flipkart.com/smooth-life-3-in-1-cable-1-2-m-fast-charging-mobile-phones-multipurpose-premium-material/product-reviews/itm37b8da57f1671?pid=ACCGRT7RCKWTTTCG&amp;lid=LSTACCGRT7RCKWTTTCG6RFM2B&amp;sortOrder=MOST_HELPFUL&amp;certifiedBuyer=false&amp;aid=overall&amp;page=12" ContentHash="2t6B_vzoGUWG2V9L8L6NGg" DesignTimeRectangle="278, 191, 1366, 1054" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='VLIitu' parentid='container' tag='DIV' /&gt;" Guid="a009b56e-49ae-4fb5-b6a3-e9abf5bc0bc7" Reference="-a-3-KI9pEe6HfVMrlB9wA/KHTQYcSAJk6ChlLhAz67wA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material Reviews: Latest Review of Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material | Price in India | Flipkart.com' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8992beaf6160d3586a27a3676607a03f.png" xmlns="">0PaMfpsPfvUyau82cFyzStg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='reviews'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='date'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

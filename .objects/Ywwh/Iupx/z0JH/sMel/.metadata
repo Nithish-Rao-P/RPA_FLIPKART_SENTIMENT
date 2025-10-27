@@ -1,0 +1,14 @@
+﻿{
+  "Name": "smooth life 3-in-1 Cabl…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "sMel6NKo20S0nJbMf5SDvg",
+  "Reference": "-a-3-KI9pEe6HfVMrlB9wA/sMel6NKo20S0nJbMf5SDvg",
+  "ParentRef": "-a-3-KI9pEe6HfVMrlB9wA/z0JHLYl0iEmxQupZKkwCIQ",
+  "Created": "2025-10-27T14:47:06.2653444Z",
+  "Updated": "2025-10-27T14:47:06.2653444Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,322 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C71CF163CD7_v2_sub_generateChatCompletion_Create.Bundle;assembly=C71CF163CD7_v2_sub_g.AlbJD4aF0pA1bT39W2cTQsm3" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C71CF163CD7_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>C71CF163CD7_v2_sub_g.AlbJD4aF0pA1bT39W2cTQsm3</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1313,2966" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtTables" />
+      <Variable x:TypeArguments="x:String" Name="strProductName" />
+      <Variable x:TypeArguments="x:String" Name="stURL" />
+      <Variable x:TypeArguments="x:String" Name="strTableReviews" />
+      <Variable x:TypeArguments="x:String" Name="strGenAI" />
+      <Variable x:TypeArguments="x:String" Name="strOption">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Yes</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtOutReviews" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dtOutReviews]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="520,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Product_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Summary&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Rating&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="520,2712" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,2582" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="strSummary" />
+            <Variable x:TypeArguments="x:String" Name="strRating" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="484,271" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please enter the URL" Title="Website Url">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[stURL]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Website to scrap" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,682" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="978f95a2-b5ce-450c-b603-2791d50b9b26" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,433" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get product name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="978f95a2-b5ce-450c-b603-2791d50b9b26" TextString="[strProductName]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="flipkart.com/acer-ek-series-60-45-cm-24-inch-full-hd-led-backlit-ips-panel-250-nits-brightness-hdmi-vga-ports-cable-eye-care-monitor-ek240y-p6/product-reviews/itma2e8121907189" ContentHash="QE73cnjbRUCQ3kRE1EmxOQ" DesignTimeRectangle="302, 482, 304, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='wjcEIp AbG6iz' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d6c9a549-5099-49ea-95ae-771bd887ea96" InformativeScreenshot="d41174ebd26c1a4897dcec152b813265.png" Reference="-a-3-KI9pEe6HfVMrlB9wA/sMel6NKo20S0nJbMf5SDvg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Acer Ek Series 60 45 Cm 24 Inch Full Hd Led Backlit Ips Panel 250 Nits Brightness Hdmi Vga Ports Cable Eye Care Monitor Ek240y P6 Reviews: Latest Review of Acer Ek Series 60 45 Cm 24 Inch Full Hd Led Backlit Ips Panel 250 Nits Brightness Hdmi Vga Ports Cable Eye Care Monitor Ek240y P6 | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtTables]" DisplayName="Extract data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' ReferenceIdx='0' Name='Reviews'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NExtractData_2" InteractionMode="Simulate" LimitExtractionTo="Page" MaximumResults="30" ScopeIdentifier="978f95a2-b5ce-450c-b603-2791d50b9b26" Version="V5">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="flipkart.com/smooth-life-3-in-1-cable-1-2-m-fast-charging-mobile-phones-multipurpose-premium-material/product-reviews/itm37b8da57f1671" CVScreenId="6ad7d067-0e5a-41af-89ff-2218ab308ffb" CvTextArea="1307, 658, 38, 13" CvTextArgument="NEXT" CvType="Text" DesignTimeRectangle="1308, 657, 36, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Next' parentid='container' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next' parentid='container' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='NEXT' /&gt;" Guid="981b9ad2-0ed8-4e86-8fe6-f1fd2ed9423d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material Reviews: Latest Review of Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material | Price in India | Flipkart.com' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="6ad7d067-0e5a-41af-89ff-2218ab308ffb" CvTextArea="1307, 658, 38, 13" CvTextArgument="NEXT" CvType="Text" DesignTimeRectangle="1283, 649, 86, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next' tag='A' type='' class='_9QVEpD' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='NEXT' /&gt;" Guid="bc1036cf-394a-4ef1-8401-110628f4402b" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/smooth-life-3-in-1-cable-1-2-m-fast-charging-mobile-phones-multipurpose-premium-material/product-reviews/itm37b8da57f1671?pid=ACCGRT7RCKWTTTCG&amp;lid=LSTACCGRT7RCKWTTTCG6RFM2B&amp;sortOrder=MOST_HELPFUL&amp;certifiedBuyer=false&amp;aid=overall&amp;page=1" DesignTimeRectangle="278, -1179, 1366, 1842" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='VLIitu' parentid='container' tag='DIV' /&gt;" Guid="d504bcfc-e7c3-4bb5-87a7-396bf11d594b" InformativeScreenshot="8992beaf6160d3586a27a3676607a03f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material Reviews: Latest Review of Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material | Price in India | Flipkart.com' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="148IjyoA9UO0xpG-MSKrHg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPESURBVFhHxZZvbBNlHMd/bUhY/POGTAwhArFK1JnI3mlIZPGNGOGVJow3osY3vpHwQpShhmmISsJYhAQjIYQEI+HFYiLiFFc3Z2UbFEbXzY1mbRnt1tt2a8vR3tr17mt+V47cnrt6ZR3xkk96+f15vt/nueeeK9HdC1lqhkRnEKfAA0WiM7pCO0zdexcylDEIemClMPAIpN7Vi2LVYPRcJlscOUozoj4VpDo50re+3GRh+Bcffmx/Aeqlh2y5SswGVhk9Mf8TtlxkYAOKcyvlReLR4Pr3hvxPFQZ/2wgEaBELvXVIda2xxd1Idq0xesU4a7AWaxrisWvrzo786YMJAjT5ILFqsTahQPg/cTVQur4bKLTb4m7o6k93e+05K64GkD4KXfvDHndB1+LQlRZbXMTVgD7/BqCnoeUft+UqUZpvBKCVfx3yVlwNMKViCIXccVu8EkX1NLRivy3uRFUGcnNbjVVQs+3Q815b3kSfJ+QzBwHkyz0ONSJVGWDkxDbjufJqKPI+5ORGLGRXGOTkBigzu7Gg9kPXUkgndtr6K1G1AUaeeBLpyc8NE/yMeaZlNGjFEWSlNkjR542VMHv4XsnWz2TSvnHGmrtvA8zCnRVIJ+oxNeZDcnSzAd9zjHOm6NDoy9EPvjsy5fu4C/RhP2jvFYOdR89O1GTADZ7tO98clz0fXYVnf9iRbHZjyKxfVgMsvrm1oyAKigQjb/rNHuJdvRzwZtxx+FRWFDNZ++lV/dnWAbx+5NeZOblh0OwjKITl4EJPc5RaQjbhV9suTs6mNoXEehP+I4Ja4dk3fdExL4pvOBBUS+mHk2K9FcKcF7WSuPFc0mnTner87C+xVoQgE2rlvH/XDVGcSUZf7BNrRZbFwP6TBydFcaaYeuymWCtCmPHAjVKKSrlbq6cTow3RWLgxIuL06tW3BHUzz32QPJo4LvOfBjI3n4nz8u47fWz8ta9/vs2DGs/agnHCOex+jpmnHzM2/MolcXxXAyb69MoML+eJ8wf+EYWqZXR4a684btnAtBdu6FKdotx6OtJ3uTkkDlwtxn5wGJuQItxD8mj8rHnp4yNbhljwQs/7gzzz1h+ORd/99tzU9rZOuemQ/7YJn3CiGPPSlz0K5/nk6w68/fciHQuEJKEWnI7fRz8JaUhSXqx1gjDhwVIpxQn8uRUNbDvcGRNrK0GIerBU5OtrZ51OwK++b+sTaytBGPOqGPNiKVz7vWnc6RXsvrirW6ytgEp6mPboYVL1MOF+6Tj3Vow/sSKpgU1XxFoHWHPPvxjZIw+Qmm2TAAAAAElFTkSuQmCC" InformativeScreenshot="e62ca1cf9a38cad8bb8e1585079dd431.jpg" Reference="-a-3-KI9pEe6HfVMrlB9wA/z0JHLYl0iEmxQupZKkwCIQ" Selector="&lt;html app='chrome.exe' title='Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material Reviews: Latest Review of Smooth Life 3 In 1 Cable 1 2 M Fast Charging Mobile Phones Multipurpose Premium Material | Price in India | Flipkart.com' /&gt;" Url="[stURL]" Version="V2" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtTables]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="484,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="output.xlsx" />
+          <ui:OutputDataTable DataTable="[dtTables]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="484,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[strTableReviews]" />
+          <isactr:ConnectorActivity Configuration="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" ConnectionId="8a998679-72fe-4e6c-83c5-c678649ed0bb" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="484,419" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+            <isactr:ConnectorActivity.FieldObjects>
+              <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">gpt-4o-2024-11-20</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["Analyze the following product and its customer reviews.
+
+Product Name:"+strProductName+"
+Reviews: "+strTableReviews+"
+
+Task: Summarize the overall sentiment and key points from the reviews.  
+Then, provide a recommendation on whether I should buy the product or not,  
+and give a rating for the product based on your analysis (out of 5).
+
+Output Format (strictly follow this format no extra add ons):
+summary: [your summary here]
+rating: [rating value]
+"]</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+              <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+              <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+              <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+              <isactr:FieldObject Name="topK" Type="FieldArgument" />
+              <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">None</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="_file" Type="FieldArgument" />
+              <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+              <isactr:FieldObject Name="topP" Type="FieldArgument" />
+              <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+              <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+              <isactr:FieldObject Name="top_p" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">You are an AI product review analyzer.
+Your task is to analyze the sentiment and overall feedback of a product based on its reviews.</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Int64" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="temperature" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Double">0</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="n" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="_stop" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="x:String">[strGenAI]</OutArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="x:String" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="x:String" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+            </isactr:ConnectorActivity.FieldObjects>
+          </isactr:ConnectorActivity>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strGenAI]" />
+          <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="484,324" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Select yes when you want to compare with another" OptionsString="Yes;No" Title="compare">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[strOption]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <ui:Matches BuilderPattern="(?&lt;=summary:\s)(.*?)(?=\s*rating:)" DisplayName="Find Matching Patterns" FirstMatch="[strSummary]" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[strGenAI]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=summary:\\s)(.*?)(?=\\s*rating:)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=summary:\s)(.*?)(?=\s*rating:)" RegexOption="IgnoreCase, Compiled" />
+          <ui:Matches BuilderPattern="(?&lt;=rating:\s*)\d+(?=\s*out of\s*5)" DisplayName="Find Matching Patterns" FirstMatch="[strRating]" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[strGenAI]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=rating:\\s*)\\d+(?=\\s*out of\\s*5)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=rating:\s*)\d+(?=\s*out of\s*5)" RegexOption="IgnoreCase, Compiled" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strProductName,strSummary,strRating}]" DataTable="[dtOutReviews]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strOption.Equals(&quot;Yes&quot;)" />
+      </ui:InterruptibleWhile.Condition>
+    </ui:InterruptibleWhile>
+    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtOutReviews]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="520,139" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Comparison" WorkbookPath="output.xlsx" />
+  </Sequence>
+</Activity>
